@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from './components/Contact';
 import Hero from './components/Hero';
 import Second from './components/Second';
 import Third from './components/Third';
@@ -9,6 +10,7 @@ function App() {
       <Hero />
       <Second />
       <Third />
+      <Contact />
     </div>
   );
 }

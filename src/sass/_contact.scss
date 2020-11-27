@@ -1,0 +1,62 @@
+.contact {
+  @include flexGen(row, nowrap, center, flex-start);
+  background: colors(color3);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  &__inner {
+    @include flexGen(column, nowrap, center, center);
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  form {
+    @include flexGen(row, wrap, space-between, center);
+
+    label {
+      width: calc(50% - 2rem);
+      color: colors(color2);
+      margin-bottom: 2rem;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+
+      &:last-child {
+        width: 100%;
+      }
+    }
+
+    span {
+      color: lighten(colors(color5), 20%);
+    }
+
+    input,
+    textarea {
+      padding: 0.5rem 1rem;
+      width: 100%;
+      border-radius: 0.5rem;
+      border: 0;
+      background: lighten(colors(color3), 10%);
+    }
+
+    textarea {
+      height: 150px;
+    }
+  }
+
+  ::placeholder {
+    color: lighten(colors(color5), 20%);
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: colors(color2);
+    margin-bottom: 3rem;
+
+    span {
+      color: colors(color1);
+      margin-left: 1rem;
+    }
+  }
+}

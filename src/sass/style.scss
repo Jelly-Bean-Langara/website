@@ -35,6 +35,7 @@ a {
 
 li {
   outline: none;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -45,6 +46,34 @@ li {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+footer {
+  @include flexGen(row, nowrap, space-between, center);
+  background: colors(color1);
+  padding: 2rem;
+  color: colors(color4);
+
+  nav {
+    @include flexGen(row, nowrap, center, center);
+
+    img {
+      width: 15%;
+
+      &:nth-child(2) {
+        margin-left: 1rem;
+      }
+    }
+
+    ul {
+      @include flexGen(row, nowrap, center, center);
+      margin-left: 2rem;
+
+      li {
+        margin-right: 2rem;
+      }
+    }
+  }
 }
 
 // Imports

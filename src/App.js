@@ -1,5 +1,6 @@
 import React from 'react';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Fourth from './components/Fourth';
 import Hero from './components/Hero';
 import Second from './components/Second';
@@ -13,6 +14,7 @@ function App() {
       <Third />
       <Contact />
       <Fourth />
+      <Footer />
     </div>
   );
 }

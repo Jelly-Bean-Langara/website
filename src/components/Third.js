@@ -12,7 +12,7 @@ import mandeep from '../assets/static/Mandeep_Kaur.jpg';
 import yuvraj from '../assets/static/Yuvraj_Singh.jpg';
 
 const Third = () => (
-  <section className="third">
+  <section className="third" name="team">
     <div className="third__inner">
       <h2>Meet the team</h2>
 

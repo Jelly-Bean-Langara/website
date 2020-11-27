@@ -5,7 +5,7 @@ import map from '../assets/static/map.svg';
 import pin from '../assets/static/pin.svg';
 
 const Second = () => (
-  <section className="second">
+  <section className="second" name="second">
     <div className="second__inner">
       <h2>
         Plan ahead or make a

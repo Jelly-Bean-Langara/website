@@ -1,0 +1,73 @@
+.hero {
+  @include flexGen(row, nowrap, center, center);
+  background: url("../assets/static/bg-circle.png") colors(color1) no-repeat;
+  background-position: 350% 90%;
+  width: 100%;
+  padding-bottom: 7rem;
+
+  &__inner {
+    @include gridGen(repeat(12, 1fr), auto, 1rem, 1rem);
+    width: 100%;
+  }
+
+  &__nav {
+    @include flexGen(row, nowrap, flex-start, center);
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    padding: 1rem;
+    padding-left: 3rem;
+  }
+
+  &__slogan {
+    grid-column: 2 / 7;
+    grid-row: 2 / 3;
+    margin-top: 5rem;
+  }
+
+  &__screens {
+    position: relative;
+    grid-column: 7 / 12;
+
+    img {
+      position: absolute;
+      right: -10rem;
+    }
+  }
+
+  &__download {
+    @include flexGen(row, nowrap, flex-start, center);
+    width: 100%;
+
+    img:nth-child(2) {
+      margin-left: 1rem;
+    }
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: colors(color3);
+    line-height: 1.1;
+
+    span {
+      display: block;
+      color: colors(color2);
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    width: 60%;
+    color: colors(color2);
+    line-height: 1.5;
+    margin: 2rem 0;
+  }
+
+  ul {
+    @include flexGen(row, nowrap, center, center);
+    margin-left: 2rem;
+
+    li {
+      margin: 0 1rem;
+    }
+  }
+}

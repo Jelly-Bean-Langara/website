@@ -1,0 +1,15 @@
+// Max width value
+$max-width: 1440px;
+
+// Palette ex: colors(prime) = #782e74
+$colors: (
+  color1: #fa5f56,
+  color2: #f7f7f7,
+  color3: #0d324a,
+  color4: #ffffff,
+  color5: #1d8a99,
+);
+
+@function colors($color-value) {
+  @return map-get($map: $colors, $key: $color-value);
+} ;

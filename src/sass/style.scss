@@ -38,6 +38,11 @@ li {
   cursor: pointer;
 }
 
+textarea,
+input {
+  color: colors(color4);
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -49,13 +54,19 @@ li {
 }
 
 footer {
-  @include flexGen(row, nowrap, space-between, center);
+  @include flexGen(row, nowrap, center, center);
   background: colors(color1);
   padding: 2rem;
   color: colors(color4);
 
+  .inner {
+    @include flexGen(row, nowrap, space-between, center);
+    width: 100%;
+    max-width: 1400px;
+  }
+
   nav {
-    @include flexGen(row, nowrap, center, center);
+    @include flexGen(row, nowrap, flex-start, center);
 
     img {
       width: 15%;

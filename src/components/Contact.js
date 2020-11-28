@@ -14,7 +14,7 @@ const Contact = () => (
             Name:
             <span>*</span>
           </p>
-          <input id="name" type="text" placeholder="Your name" />
+          <input id="name" type="text" placeholder="Your name" required />
         </label>
 
         <label htmlFor="email">
@@ -22,7 +22,7 @@ const Contact = () => (
             E-mail:
             <span>*</span>
           </p>
-          <input id="email" type="text" placeholder="Your E-mail" />
+          <input id="email" type="text" placeholder="Your E-mail" required />
         </label>
 
         <label htmlFor="message">
@@ -30,8 +30,10 @@ const Contact = () => (
             Message:
             <span>*</span>
           </p>
-          <textarea id="message" placeholder="Your message" />
+          <textarea id="message" placeholder="Your message" required />
         </label>
+
+        <button type="submit">Send</button>
       </form>
     </div>
   </section>

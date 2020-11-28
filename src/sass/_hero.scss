@@ -1,12 +1,14 @@
 .hero {
   @include flexGen(row, nowrap, center, center);
   background: url("../assets/static/bg-circle.png") colors(color1) no-repeat;
-  background-position: 350% 90%;
+  background-position-x: 40rem;
+  background-position-y: -55rem;
   width: 100%;
   padding-bottom: 7rem;
 
   &__inner {
     @include gridGen(repeat(12, 1fr), auto, 1rem, 1rem);
+    max-width: 1400px;
     width: 100%;
   }
 
@@ -35,7 +37,7 @@
 
     img {
       position: absolute;
-      right: -10rem;
+      right: -8rem;
     }
   }
 

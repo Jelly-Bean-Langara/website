@@ -2,7 +2,8 @@
   @include flexGen(row, nowrap, center, flex-start);
   background: url("../assets/static/bg-circle-red.png")
     lighten(colors(color3), 5%) no-repeat;
-  background-position: -250% 110%;
+  background-position-x: -40rem;
+  background-position-y: -55rem;
   padding-top: 3rem;
 
   &__inner {

@@ -5,7 +5,7 @@
 
   &__inner {
     @include flexGen(row, wrap, center, flex-start);
-    max-width: 1440px;
+    max-width: 1400px;
     width: 100%;
   }
 

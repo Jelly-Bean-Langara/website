@@ -12,30 +12,91 @@
   &__team {
     @include flexGen(row, wrap, space-between, flex-start);
   }
-  &__box {
-    width: calc(20% - 2rem);
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: lighten(colors(color3), 5%);
     padding: 2rem;
     border-radius: 1rem;
     margin-bottom: 2.5rem;
     color: colors(color2);
     text-align: center;
+    transition: all 0.4s ease;
+    overflow: hidden !important;
+
+    &--front {
+      height: 100%;
+
+      h3 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-style: italic;
+        font-size: 0.9rem;
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        margin-top: 1.3rem;
+      }
+    }
+
+    &--back {
+      @include flexGen(column, nowrap, space-between, center);
+      opacity: 0;
+      height: 100%;
+      pointer-events: none;
+
+      p {
+        font-weight: 400;
+        text-align: left;
+        line-height: 1.5;
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        margin-top: 1rem;
+      }
+
+      a {
+        color: colors(color5);
+        font-size: 1.5rem;
+        transition: all 0.5s ease;
+
+        &:hover {
+          color: colors(color4);
+        }
+      }
+
+      ul {
+        @include flexGen(row, nowrap, flex-start, center);
+        width: 100%;
+
+        li {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    width: calc(20% - 2rem);
+    min-width: 248px;
+    height: 345px;
+    margin-bottom: 2rem;
 
     img {
       border-radius: 100%;
       width: 90%;
       margin: 0 auto;
-    }
-
-    h3 {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    button {
-      background: transparent;
-      border: none;
-      margin-top: 1rem;
     }
   }
 

@@ -133,10 +133,12 @@
 
   button {
     position: absolute;
-    right: 2rem;
-    top: 2rem;
+    right: 1.5rem;
+    top: 1.5rem;
     background: transparent;
     border: none;
+    font-size: 2rem;
+    color: colors(color3);
 
     @include firstBrk {
       display: none;

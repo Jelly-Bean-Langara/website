@@ -1,0 +1,49 @@
+.mobile-menu {
+  background: colors(color3);
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease;
+  transform: translateX(-100%);
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  &__logo {
+    @include flexGen(column, nowrap, center, center);
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    color: colors(color4);
+    font-size: 1.8rem;
+    text-align: center;
+
+    li {
+      margin-bottom: 2rem;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    background: transparent;
+    border: 0;
+    color: colors(color4);
+    font-size: 2rem;
+  }
+}

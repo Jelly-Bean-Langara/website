@@ -14,7 +14,7 @@ const Proposal = () => (
           <br />
           the journey of building this app
         </p>
-        <a href="https://offbeatapp.ca/downloads/OFFbeat_Proposal.pdf">Download Proposal</a>
+        <a href="https://offbeatapp.ca/downloads/OFFbeat_Proposal.pdf" target="blank">Download Proposal</a>
       </div>
 
       <div className="proposal__right">

@@ -2,42 +2,77 @@
   @include flexGen(row, nowrap, center, flex-start);
   background: url("../assets/static/bg-circle-red.png")
     lighten(colors(color3), 5%) no-repeat;
-  background-position-x: -40rem;
-  background-position-y: -55rem;
+  background-position-x: -22rem;
+  background-position-y: -22rem;
+  background-size: cover;
   padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include firstBrk {
+    background-position-x: -35rem;
+    background-position-y: -35rem;
+    padding-bottom: 0;
+  }
 
   &__inner {
     @include gridGen(1fr, auto, 1rem, 1rem);
-    // @include gridGen(repeat(2, 1fr), auto, 1rem, 1rem);
     max-width: 1440px;
     width: 100%;
+    padding: 0 2rem;
+
+    @include firstBrk {
+      @include gridGen(repeat(2, 1fr), auto, 1rem, 1rem);
+      padding: 0;
+    }
   }
 
   &__left {
-    grid-column: 1 / 2;
+    grid-column: 1 / -1;
+
+    @include firstBrk {
+      grid-column: 1 / 2;
+    }
   }
 
   &__right {
     @include flexGen(column, nowrap, center, center);
-    grid-column: 2 / 3;
+    grid-column: 1 / -1;
+
+    @include firstBrk {
+      grid-column: 2 / 3;
+    }
   }
 
   h2 {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     color: colors(color4);
     margin-bottom: 2rem;
+    width: 100%;
+
+    @include firstBrk {
+      font-size: 4.5rem;
+      width: auto;
+    }
   }
 
   p {
-    font-size: 1.5rem;
-    width: 60%;
+    font-size: 1.2rem;
     color: colors(color4);
     line-height: 1.5;
     margin-bottom: 3rem;
+
+    @include firstBrk {
+      font-size: 1.5rem;
+      width: 60%;
+    }
   }
 
   &__download {
-    @include flexGen(row, wrap, center, center);
+    @include flexGen(row, nowrap, center, center);
+
+    img {
+      width: 45%;
+    }
 
     img:first-child {
       margin-right: 1rem;

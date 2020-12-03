@@ -16,8 +16,8 @@
   &__logo {
     @include flexGen(column, nowrap, center, center);
     position: absolute;
-    bottom: 2rem;
-    left: 30%;
+    bottom: 3rem;
+    width: 100%;
 
     img {
       margin-bottom: 2rem;

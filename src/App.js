@@ -3,6 +3,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Fourth from './components/Fourth';
 import Hero from './components/Hero';
+import Proposal from './components/Proposal';
 import Second from './components/Second';
 import Third from './components/Third';
 
@@ -13,6 +14,7 @@ function App() {
       <Second />
       <Third />
       <Contact />
+      <Proposal />
       <Fourth />
       <Footer />
     </div>

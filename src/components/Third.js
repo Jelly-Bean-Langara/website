@@ -134,7 +134,7 @@ const Third = () => {
               <p>Art Director / Graphic Designer from Brazil, with over 12 years of experience. I am extending my expertise in UX and UI. I am a versatile professional.</p>
               <ul>
                 <li><a href="https://www.linkedin.com/in/gpalladini/" target="blank"><FaLinkedin /></a></li>
-                <li><a href="https://www.behance.net/gustavopalladini" target="blank"><FaBehance /></a></li>
+                <li><a href="https://www.gp.art.br" target="blank"><FaGlobe /></a></li>
               </ul>
               <button type="button" onClick={() => handleFlipBack(1)}><img src={minus} alt="OFFbeat Minus" /></button>
             </div>

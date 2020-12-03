@@ -17,6 +17,7 @@ const Hero = () => (
           <li><Link to="team" spy smooth offset={150} duration={500}>Team</Link></li>
           <li><Link to="contact" spy smooth offset={0} duration={500}>Contact</Link></li>
         </ul>
+        <button type="button">Down</button>
       </nav>
 
       <div className="hero__slogan">

@@ -7,7 +7,8 @@
   padding-top: 3rem;
 
   &__inner {
-    @include gridGen(repeat(2, 1fr), auto, 1rem, 1rem);
+    @include gridGen(1fr, auto, 1rem, 1rem);
+    // @include gridGen(repeat(2, 1fr), auto, 1rem, 1rem);
     max-width: 1440px;
     width: 100%;
   }
@@ -36,7 +37,7 @@
   }
 
   &__download {
-    @include flexGen(row, nowrap, center, center);
+    @include flexGen(row, wrap, center, center);
 
     img:first-child {
       margin-right: 1rem;

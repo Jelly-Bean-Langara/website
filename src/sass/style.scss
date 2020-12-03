@@ -54,7 +54,8 @@ input {
 }
 
 footer {
-  @include flexGen(row, nowrap, center, center);
+  display: none;
+  // @include flexGen(row, nowrap, center, center);
   background: colors(color1);
   padding: 2rem;
   color: colors(color4);

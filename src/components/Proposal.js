@@ -19,7 +19,7 @@ const Proposal = () => (
 
       <div className="proposal__right">
         <iframe
-          width="560"
+          width="100%"
           height="315"
           src="https://www.youtube.com/embed/ukmLniKGkRU"
           frameBorder="0"

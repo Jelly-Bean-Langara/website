@@ -22,7 +22,7 @@
   &__box {
     @include gridGen(10% 90%, auto, 1rem, 1rem);
     margin-bottom: 3rem;
-    width: 400px;
+    max-width: 400px;
 
     img {
       grid-column: 1 / 2;

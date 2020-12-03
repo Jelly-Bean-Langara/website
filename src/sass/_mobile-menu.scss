@@ -16,7 +16,7 @@
   &__logo {
     @include flexGen(column, nowrap, center, center);
     position: absolute;
-    bottom: 0;
+    bottom: 2rem;
     left: 30%;
 
     img {
@@ -27,7 +27,7 @@
   ul {
     position: absolute;
     width: 100%;
-    top: 35%;
+    top: 30%;
     color: colors(color4);
     font-size: 1.8rem;
     text-align: center;

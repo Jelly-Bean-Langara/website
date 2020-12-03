@@ -1,12 +1,21 @@
 .third {
   @include flexGen(row, nowrap, center, flex-start);
   background: colors(color3);
-  padding-top: 12rem;
+  padding-top: 8rem;
+
+  @include firstBrk {
+    padding-top: 12rem;
+  }
 
   &__inner {
     @include flexGen(row, wrap, center, flex-start);
     max-width: 1400px;
     width: 100%;
+    padding: 0 2rem;
+
+    @include firstBrk {
+      padding: 0;
+    }
   }
 
   &__team {
@@ -88,10 +97,16 @@
 
   &__box {
     position: relative;
-    width: calc(20% - 2rem);
+    width: 100%;
     min-width: 248px;
-    height: 345px;
+    height: 395px;
     margin-bottom: 2rem;
+
+    @include firstBrk {
+      width: calc(20% - 2rem);
+      min-width: 248px;
+      height: 345px;
+    }
 
     img {
       border-radius: 100%;
@@ -103,8 +118,12 @@
   h2 {
     width: 100%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: colors(color2);
     margin-bottom: 4rem;
+
+    @include firstBrk {
+      font-size: 2.5rem;
+    }
   }
 }

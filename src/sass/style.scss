@@ -43,6 +43,22 @@ input {
   color: colors(color4);
 }
 
+.desktop {
+  display: none;
+
+  @include firstBrk {
+    display: block;
+  }
+}
+
+.mobile {
+  display: block;
+
+  @include firstBrk {
+    display: none;
+  }
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);

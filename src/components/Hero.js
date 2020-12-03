@@ -5,6 +5,7 @@ import logoText from '../assets/static/logo-text.png';
 import appStore from '../assets/static/app-store.png';
 import googlePlay from '../assets/static/google-play.png';
 import screens from '../assets/static/screens.png';
+import screensMobile from '../assets/static/screens-mobile.png';
 
 const Hero = () => (
   <section className="hero" name="hero">
@@ -37,7 +38,8 @@ const Hero = () => (
       </div>
 
       <div className="hero__screens">
-        <img src={screens} alt="OFFbeat Screens" />
+        <img src={screens} className="desktop" alt="OFFbeat Screens" />
+        <img src={screensMobile} className="mobile" alt="OFFbeat Screens" />
       </div>
     </div>
   </section>
